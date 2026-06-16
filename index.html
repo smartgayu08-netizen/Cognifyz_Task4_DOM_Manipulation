@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 4 - Form Validation & DOM Manipulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <h2>DOM</h2>
+
+    <ul>
+        <li><a href="#" onclick="showSection('home')">Home</a></li>
+        <li><a href="#" onclick="showSection('register')">Register</a></li>
+        <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="home" class="section active">
+    <h1>Welcome to My Website 🚀</h1>
+    <p>Complex Form Validation and Dynamic DOM Manipulation</p>
+</section>
+
+<section id="register" class="section">
+    <div class="form-container">
+
+        <h2>Registration Form</h2>
+
+        <form id="myForm">
+
+            <input type="text" id="name" placeholder="Enter Name" required>
+
+            <input type="email" id="email" placeholder="Enter Email" required>
+
+            <input type="password" id="password" placeholder="Enter Password" required>
+            <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+
+            <p id="strength"></p>
+
+            <button type="submit">Register</button>
+
+        </form>
+
+        <h3 id="welcomeMessage"></h3>
+
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <h1>Contact Me</h1>
+
+    <p>Name: Gayathri K</p>
+
+    <p>
+        GitHub:
+        <a href="https://github.com/smartgayu08-netizen" target="_blank">
+            Visit GitHub
+        </a>
+    </p>
+
+    <p>
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/gayathri-k-2187b6380/" target="_blank">
+            Visit LinkedIn
+        </a>
+    </p>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
